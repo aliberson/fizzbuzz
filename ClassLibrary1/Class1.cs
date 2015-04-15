@@ -10,35 +10,6 @@ namespace ClassLibrary1
 {
     public static class Class1
     {
-        //public static List<string> AnalyzeNumbers(int startingRangeNumber, int endingRangeNumber, Dictionary<int, string> dict)
-        //{
-        //    string text;
-        //    List<string> items = new List<string>();
-            
-        //    for (int i = startingRangeNumber; i < endingRangeNumber + 1; i++)
-        //    {
-        //        text = ""; // init
-
-        //        for (int j = 0; j < dict.Keys.Count; j++)
-        //        {
-        //            var operand = dict.ElementAt(j).Key;
-                    
-
-        //            if ((i % operand) == 0)
-        //            {
-        //                text += dict.ElementAt(j).Value.ToString();
-        //            }
-        //        }
-
-        //        items.Add(i + " " + text);
-
-                
-        //        //System.Diagnostics.Debug.WriteLine("{0} {1}", i, text);
-        //    }
-        //    return items;
-        //}
-
-
         public static List<string> AnalyzeNumbers(int startingRangeNumber, int endingRangeNumber, Dictionary<int, string> dict)
         {
             List<string> items = new List<string>();
@@ -49,9 +20,6 @@ namespace ClassLibrary1
 
                 analysisResult = getAnalysis(i, dict);
                 items.Add(i + " " + analysisResult);
-
-
-                //System.Diagnostics.Debug.WriteLine("{0} {1}", i, text);
             }
             return items;
         }
